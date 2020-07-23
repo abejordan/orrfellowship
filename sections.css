@@ -1,0 +1,39 @@
+/* GLOBAL */
+.ghost-btn-orange {
+    color: #ff4d1c;
+    background: transparent;
+    padding: 10px 15px;
+    margin: 0;
+    position: relative;
+    border-radius: 2px;
+    border: 2px solid #ff4d1c;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "Merriweather", serif;
+    transition: all .2s ease-in-out;
+}
+
+.ghost-btn-orange:hover {
+    text-decoration: none;
+    background: #ff4d1c;
+    color: #FFFFFF;
+}
+
+/* 1.html */
+.video-experience {
+    background-color: rgb(51, 122, 183);
+    padding: 8rem 0;
+}
+
+/* 2.html */
+
+/* 3.html */
+
+/* 4.html */
+
+/* 5.html */
+
+/* 6.html */
