@@ -6,28 +6,28 @@ include_once('_parts/header.php');
 <link rel="stylesheet" type="text/css" href="./sections.css" />
 
 <!-- rhett is gettin' fancy -->
-<?php include('./overview/1.html'); ?>
+<?php include('./homepage/1.html'); ?>
 <br>
 <br>
-<?php include('./overview/2.html'); ?>
+<?php include('./homepage/2.html'); ?>
 <br>
 <br>
-<?php include('./overview/3.html'); ?>
+<?php include('./homepage/3.html'); ?>
 <br>
 <br>
-<?php include('./overview/4.html'); ?>
+<?php include('./homepage/4.html'); ?>
 <br>
 <br>
-<?php include('./overview/5.html'); ?>
+<?php include('./homepage/5.html'); ?>
 <br>
 <br>
-<?php include('./overview/6.html'); ?>
+<?php include('./homepage/6.html'); ?>
 <br>
 <br>
-<?php include('./overview/7.html'); ?>
+<?php include('./homepage/7.html'); ?>
 <br>
 <br>
-<?php include('./overview/8.html'); ?>
+<?php include('./homepage/8.html'); ?>
 
 <?php
 include_once('_parts/footer.php');

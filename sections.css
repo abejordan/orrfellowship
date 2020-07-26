@@ -51,19 +51,23 @@
     color: white;
 }
 
+/* HOME PAGE */
+
 /* 1.html */
-.video-experience {
-    background-color: rgb(172 206 245)
+.background-image {
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: cover;
 }
 
-/* 2.html */
+/* OVERVIEW PAGE */
 
-/* 3.html */
-
-/* 4.html */
+/* 1.html */
+.video-experience {
+    background-color: rgb(172 206 245);
+}
 
 /* 5.html */
-
 .card-img-container {
     overflow: hidden;
     max-height: 150px;
@@ -75,12 +79,7 @@
     object-fit: cover;
 }
 
-/* 6.html */
-
-/* 7.html */
-
 /* 8.html */
-
 .footer-link-container {
     flex: 1 1 150px;
     padding: 0 .5rem;
