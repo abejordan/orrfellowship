@@ -53,11 +53,25 @@
 
 /* HOME PAGE */
 
-/* 1.html */
+/* 2.html */
 .background-image {
     background-repeat: no-repeat;
     background-position: center center; 
     background-size: cover;
+}
+
+/* 3.html */
+.icon-card {
+    height: 275px;
+    max-height: 275px;
+    min-height: 275px;
+    width: 275px;
+    max-width: 275px;
+    min-width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* OVERVIEW PAGE */
