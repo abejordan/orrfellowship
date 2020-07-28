@@ -74,6 +74,97 @@
     justify-content: center;
 }
 
+/* SLIDER */
+#carousel {
+    /* height: 500px; */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    visibility: hidden;
+}
+  
+.carousel-slides {
+    width: 100%;
+    height: 100%;
+    animation: fade 1.5s;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carousel-slides .text-content {
+    max-width: 500px;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+}
+
+.carousel-slides .text-content p {
+    font-size: x-large;
+}
+
+.carousel-slides .text-content p:before {
+    content: '“';
+    position: absolute;
+    margin: -15rem 0rem 0rem -5rem;
+    opacity: .25;
+    font-size: 300px;
+    font-family: auto;
+}
+
+.carousel-slides .text-content span {
+    display: block;
+    color: #333;
+}
+
+.carousel-slides .img-content {
+    max-width: 500px;
+}
+
+#carouselQuote {
+    background: green;
+    padding: 5rem;
+    position: relative;
+}
+  
+.prev-slide, .next-slide {
+    position: absolute;
+    cursor: pointer;
+    color: lightgray;
+    font-size: 80px;
+    transition: all .3s ease-in-out;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.prev-slide:hover, .next-slide:hover {
+    color: gray;
+}
+
+.prev-slide {
+    left: 10px;
+}
+
+.next-slide {
+    right: 10px;
+}
+  
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* 7.html */
 
 .tile-bg {

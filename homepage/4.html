@@ -1,3 +1,112 @@
 <!--Home Page 4.png-->
 
-<p class="text-center">TODO</p>
+<section>
+    <div class="container">
+        <div id="carousel">
+            <div class="carousel-slides">
+                <div class="text-content">
+                    <p>"Slide 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    <span>First Last</span>
+                    <span>School</span>
+                    <span>Company</span>
+                    <a href="" class="cta-btn-orange my-4">See All Fellows</a>
+                </div>
+                <div class="img-content">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300"/>
+                </div>
+            </div>
+            <div class="carousel-slides">
+                <div class="text-content">
+                    <p>"Slide 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    <span>First Last</span>
+                    <span>School</span>
+                    <span>Company</span>
+                    <a href="" class="cta-btn-orange my-4">See All Fellows</a>
+                </div>
+                <div class="img-content">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300"/>
+                </div>
+            </div>
+            <div class="carousel-slides">
+                <div class="text-content">
+                    <p>"Slide 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    <span>First Last</span>
+                    <span>School</span>
+                    <span>Company</span>
+                    <a href="" class="cta-btn-orange my-4">See All Fellows</a>
+                </div>
+                <div class="img-content">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300"/>
+                </div>
+            </div>
+            <div class="carousel-slides">
+                <div class="text-content">
+                    <p>"Slide 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    <span>First Last</span>
+                    <span>School</span>
+                    <span>Company</span>
+                    <a href="" class="cta-btn-orange my-4">See All Fellows</a>
+                </div>
+                <div class="img-content">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300"/>
+                </div>
+            </div>
+            <div class="carousel-slides">
+                <div class="text-content">
+                    <p>"Slide 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    <span>First Last</span>
+                    <span>School</span>
+                    <span>Company</span>
+                    <a href="" class="cta-btn-orange my-4">See All Fellows</a>
+                </div>
+                <div class="img-content">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300"/>
+                </div>
+            </div>
+            <div class="carousel-slides">
+                <div class="text-content">
+                    <p>"Slide 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    <span>First Last</span>
+                    <span>School</span>
+                    <span>Company</span>
+                    <a href="" class="cta-btn-orange my-4">See All Fellows</a>
+                </div>
+                <div class="img-content">
+                    <img class="img-fluid" src="https://via.placeholder.com/300x300"/>
+                </div>
+            </div>
+            <span class="prev-slide" id="prevSlide"> < </span>
+            <span class="next-slide" id="nextSlide"> > </span>
+        </div>
+        </div>
+</section>
+
+<script>
+    let currentSlide = 1;
+
+    function displaySlide(slideIndex) {
+        const slides = document.getElementsByClassName('carousel-slides');
+        if (slideIndex > slides.length) { currentSlide = 1 }
+        if (slideIndex < 1) { currentSlide = slides.length }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none'
+        }
+        slides[currentSlide - 1].style.display = 'flex'
+    }
+
+    function nextSlide() {
+        displaySlide(currentSlide += 1);
+    }
+
+    function previousSlide() {
+        displaySlide(currentSlide -= 1);
+    }
+
+    window.onload = function () {
+        displaySlide(currentSlide);
+        document.getElementById('carousel').style.visibility = 'visible';
+        document.getElementById('prevSlide').addEventListener('click', function () { previousSlide(); });
+        document.getElementById('nextSlide').addEventListener('click', function () { nextSlide(); });
+    }
+
+</script>
