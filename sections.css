@@ -75,8 +75,7 @@
 }
 
 /* SLIDER */
-#carousel {
-    /* height: 500px; */
+#slider {
     position: relative;
     overflow: hidden;
     display: flex;
@@ -85,49 +84,45 @@
     visibility: hidden;
 }
   
-.carousel-slides {
+.slider-slide {
     width: 100%;
     height: 100%;
     animation: fade 1.5s;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: space-around;
 }
 
-.carousel-slides .text-content {
+.slider-slide .text-content {
     max-width: 500px;
     text-align: left;
     font-family: 'Merriweather', serif;
+    margin-top: 5rem;
 }
 
-.carousel-slides .text-content p {
+.slider-slide .text-content p {
     font-size: x-large;
 }
 
-.carousel-slides .text-content p:before {
+.slider-slide .text-content p:before {
     content: '“';
     position: absolute;
     margin: -15rem 0rem 0rem -5rem;
-    opacity: .25;
+    opacity: .2;
+    color: #f2521d;
     font-size: 300px;
     font-family: auto;
 }
 
-.carousel-slides .text-content span {
+.slider-slide .text-content span {
     display: block;
     color: #333;
 }
 
-.carousel-slides .img-content {
+.slider-slide .img-content {
     max-width: 500px;
-}
-
-#carouselQuote {
-    background: green;
-    padding: 5rem;
-    position: relative;
 }
   
 .prev-slide, .next-slide {
@@ -136,6 +131,7 @@
     color: lightgray;
     font-size: 80px;
     transition: all .3s ease-in-out;
+    /* prevents browser from highlighting text */
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -149,19 +145,38 @@
 }
 
 .prev-slide {
-    left: 10px;
+    left: 5px;
 }
 
 .next-slide {
-    right: 10px;
+    right: 5px;
 }
   
 @keyframes fade {
     from {
-        opacity: 0.4;
+        opacity: 0.2;
     }
     to {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #slider {
+        padding: 3rem;
+    }
+
+    .slider-slide .text-content p {
+        font-size: medium;
+    }
+
+    .slider-slide .text-content p:before {
+        font-size: 200px;
+        margin: -10rem 0rem 0rem -2.5rem;
+    }
+
+    .prev-slide, .next-slide {
+        font-size: xx-large;
     }
 }
 
